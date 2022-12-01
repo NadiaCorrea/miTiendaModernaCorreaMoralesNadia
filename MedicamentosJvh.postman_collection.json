@@ -1,0 +1,1194 @@
+{
+	"info": {
+		"_postman_id": "8595fd57-500e-45a3-a130-cb68758d984a",
+		"name": "MedicamentosJvh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListMedicine mediante Login",
+			"item": [
+				{
+					"name": "Login sin argumentos GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							]
+						},
+						"description": "Acceso a ListMedicine por GET"
+					},
+					"response": []
+				},
+				{
+					"name": "Login sin argumentos POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							]
+						},
+						"description": "Acceso por POST a ListMedicine sin usuario ni contraseña"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos vacios POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user&password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": null
+								},
+								{
+									"key": "password",
+									"value": null
+								}
+							]
+						},
+						"description": "Acceso por POST a ListMedicine con usuario y contraseña vacios"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos null POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user=null&password=null",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "null"
+								},
+								{
+									"key": "password",
+									"value": "null"
+								}
+							]
+						},
+						"description": "Acceso por POST a ListMedicine con usuario y contraseña nulas"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos correctos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "Acceso con usuario admin a ListMedicine mediante POST"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos correctos GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "Acceso mediante GET a ListMedicine con usuario admin\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos null GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user=null&password=null",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "null"
+								},
+								{
+									"key": "password",
+									"value": "null"
+								}
+							]
+						},
+						"description": "Acceso a ListMedicine por GET con usuario y contraseña nulos"
+					},
+					"response": []
+				},
+				{
+					"name": "Login argumentos vacios GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user&password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"ListMedicine"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": null
+								},
+								{
+									"key": "password",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registro",
+			"item": [
+				{
+					"name": "Registro Parametros vacios GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username&passwordR&first&last&birth&gender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								},
+								{
+									"key": "passwordR",
+									"value": null
+								},
+								{
+									"key": "first",
+									"value": null
+								},
+								{
+									"key": "last",
+									"value": null
+								},
+								{
+									"key": "birth",
+									"value": null
+								},
+								{
+									"key": "gender",
+									"value": null
+								}
+							]
+						},
+						"description": "Registro con todos los campos vacios mediante GET"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro parametros vacios POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username&passwordR&first&last&birth&gender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								},
+								{
+									"key": "passwordR",
+									"value": null
+								},
+								{
+									"key": "first",
+									"value": null
+								},
+								{
+									"key": "last",
+									"value": null
+								},
+								{
+									"key": "birth",
+									"value": null
+								},
+								{
+									"key": "gender",
+									"value": null
+								}
+							]
+						},
+						"description": "Registro con todos los campos vacios mediante POST"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro contraseña menor de 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=jose&passwordR=jose&first=jose&last=jose&birth=2022-11-03&gender=H&admin=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jose"
+								},
+								{
+									"key": "passwordR",
+									"value": "jose"
+								},
+								{
+									"key": "first",
+									"value": "jose"
+								},
+								{
+									"key": "last",
+									"value": "jose"
+								},
+								{
+									"key": "birth",
+									"value": "2022-11-03"
+								},
+								{
+									"key": "gender",
+									"value": "H"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Regsitro con usuario mediante POST y contraseña menor que 6."
+					},
+					"response": []
+				},
+				{
+					"name": "Registro parametros correctos POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=jose&passwordR=joselito12&first=jose&last=jose&birth=2022-11-03&gender=H&admin=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jose"
+								},
+								{
+									"key": "passwordR",
+									"value": "joselito12"
+								},
+								{
+									"key": "first",
+									"value": "jose"
+								},
+								{
+									"key": "last",
+									"value": "jose"
+								},
+								{
+									"key": "birth",
+									"value": "2022-11-03"
+								},
+								{
+									"key": "gender",
+									"value": "H"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro parametros correctos GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=jose&passwordR=joselito12&first=jose&last=jose&birth=2022-11-03&gender=H&admin=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jose"
+								},
+								{
+									"key": "passwordR",
+									"value": "joselito12"
+								},
+								{
+									"key": "first",
+									"value": "jose"
+								},
+								{
+									"key": "last",
+									"value": "jose"
+								},
+								{
+									"key": "birth",
+									"value": "2022-11-03"
+								},
+								{
+									"key": "gender",
+									"value": "H"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Deberia mostrar la página de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro contraseña menor de 6 GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=jose&passwordR=jose&first=jose&last=jose&birth=2022-11-03&gender=H&admin=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jose"
+								},
+								{
+									"key": "passwordR",
+									"value": "jose"
+								},
+								{
+									"key": "first",
+									"value": "jose"
+								},
+								{
+									"key": "last",
+									"value": "jose"
+								},
+								{
+									"key": "birth",
+									"value": "2022-11-03"
+								},
+								{
+									"key": "gender",
+									"value": "H"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Deberiamos recibir la página de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Regsitros parametros null GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=null&passwordR=null&first=null&last=null&birth=null&gender=null",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "null"
+								},
+								{
+									"key": "passwordR",
+									"value": "null"
+								},
+								{
+									"key": "first",
+									"value": "null"
+								},
+								{
+									"key": "last",
+									"value": "null"
+								},
+								{
+									"key": "birth",
+									"value": "null"
+								},
+								{
+									"key": "gender",
+									"value": "null"
+								}
+							]
+						},
+						"description": "Deberiamos recibir la pagina de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro parametros null POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register?username=null&passwordR=null&first=null&last=null&birth=null&gender=null",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "null"
+								},
+								{
+									"key": "passwordR",
+									"value": "null"
+								},
+								{
+									"key": "first",
+									"value": "null"
+								},
+								{
+									"key": "last",
+									"value": "null"
+								},
+								{
+									"key": "birth",
+									"value": "null"
+								},
+								{
+									"key": "gender",
+									"value": "null"
+								}
+							]
+						},
+						"description": "Deberia capturar la excepcion y saltar a la pagina de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro sin parametros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							]
+						},
+						"description": "Deberia saltar la pagina de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro sin parametros GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/Register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"Register"
+							]
+						},
+						"description": "Deberia saltarnos la pagina de error"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "addMedicine",
+			"item": [
+				{
+					"name": "Login correcto admin",
+					"item": [
+						{
+							"name": "Login argumentos correctos Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/ListMedicine?user=inma&password=inma",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"ListMedicine"
+									],
+									"query": [
+										{
+											"key": "user",
+											"value": "inma"
+										},
+										{
+											"key": "password",
+											"value": "inma"
+										}
+									]
+								},
+								"description": "Acceso con usuario admin a ListMedicine mediante POST"
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina correcta POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "lechuzas",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "tomate",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina correcta POST Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "lechuzasina",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "tomate",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina sin nombre POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "tomate",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina sin description POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "Omeprnhh",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina sin price POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "tomate",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina sin categoria POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "dsfsdf",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "mot",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod?",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina sin campos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "tomate",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "priceProduct",
+											"value": "12.90",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Medicina campos nulos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nameProduct",
+											"value": "null",
+											"type": "default"
+										},
+										{
+											"key": "descriptionProduct",
+											"value": "null",
+											"type": "default"
+										},
+										{
+											"key": "priceProduct",
+											"value": "null",
+											"type": "default"
+										},
+										{
+											"key": "category",
+											"value": "null",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"MedicamentosJvh",
+										"AddMedicineMethod"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Medicina sin campos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nameProduct",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "descriptionProduct",
+									"value": "tomate",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "priceProduct",
+									"value": "12.90",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"AddMedicineMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Acceso sin parametros ni usuario mediante GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"AddMedicineMethod"
+							]
+						},
+						"description": "Deberiamos obtener pagina de error"
+					},
+					"response": []
+				},
+				{
+					"name": "Acceso sin parametros ni usuario mediante POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MedicamentosJvh/AddMedicineMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MedicamentosJvh",
+								"AddMedicineMethod"
+							]
+						},
+						"description": "Deberia saltar la página de error"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
